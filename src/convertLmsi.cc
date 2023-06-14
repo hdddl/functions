@@ -1,5 +1,10 @@
 #include "convertLmsi.hpp"
+#include "utils.hpp"
+
 #include <memory.h>
+#include <iostream>
+
+using namespace std;
 
 void covertLmsi(uint32_t *src, uchar *dst)
 {
@@ -14,4 +19,6 @@ void testConvertLmsi()
     uchar dst[8];
     memset(dst, 0, sizeof(dst));
     covertLmsi(&src, dst);
+    printAsBin(dst, 8);
+    printAsHex(dst, 8);
 }

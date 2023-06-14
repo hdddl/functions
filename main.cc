@@ -1,4 +1,4 @@
-#include "funcs/convertLmsi.hpp"
+#include "src/convertLmsi.hpp"
 
 
 int main(){
